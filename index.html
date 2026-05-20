@@ -3,80 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Merna Yousif</title>
+  <title>Merna Yousif | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="hero">
-    <h1>Merna Yousif</h1>
-    <p>Computer Science Graduate | Software Development | Data | QA</p>
+  <header class="navbar">
+    <a href="#home" class="logo">Merna <span>Yousif</span></a>
 
-    <div class="links">
-      <a href="mailto:mernayousif7@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/merna-yousif" target="_blank">LinkedIn</a>
-      <a href="https://github.com/mernayousif7" target="_blank">GitHub</a>
-    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>About Me</h2>
+    <section id="home" class="hero">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Computer Science Graduate</p>
+        <h1>Hi, it’s <span>Merna</span></h1>
+        <h2>I’m a <span class="typed-text"></span><span class="cursor">|</span></h2>
+        <p class="intro">
+          I’m a University of Guelph Computer Science graduate with experience in SQL,
+          software development, testing, data validation, debugging, and full-stack projects.
+          I enjoy building practical systems, improving user experiences, and learning new technologies.
+        </p>
+
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/merna-yousif" target="_blank" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/mernayousif7" target="_blank" aria-label="GitHub">GH</a>
+          <a href="mailto:mernayousif7@gmail.com" aria-label="Email">✉</a>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image reveal">
+        <div class="profile-card">
+          <div class="profile-placeholder">
+            <span>MY</span>
+          </div>
+          <p>Software Development • Data • QA</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section reveal">
+      <h2 class="section-title">Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">2025</span>
+          <div>
+            <h3>Data Management Assistant, Kenna</h3>
+            <p>Cleaned, validated, and maintained large datasets using SQL and data quality checks.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="date">2025</span>
+          <div>
+            <h3>Game Tester, Electronic Arts</h3>
+            <p>Tested an existing game build, documented gameplay issues, and provided user-focused feedback.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="date">2024</span>
+          <div>
+            <h3>Website Redesign Coordinator, University of Guelph</h3>
+            <p>Supported Drupal 7 to Drupal 9 migration, AODA compliance, and usability improvements.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="date">2023</span>
+          <div>
+            <h3>SQL & ERP Developer, Superior Glove Works Ltd.</h3>
+            <p>Developed a package-tracking API for real-time shipment status updates across integrated systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <h2 class="section-title">Experience</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Data & SQL</h3>
+          <p>
+            Experience cleaning, validating, and analyzing datasets with SQL and data quality checks
+            to support accurate records and reliable reporting.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Software Development</h3>
+          <p>
+            Built application features, worked with APIs, debugged issues, and contributed across the software lifecycle.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Testing & QA</h3>
+          <p>
+            Tested software builds, documented issues, evaluated functionality, and provided clear feedback for improvements.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-tag">Full Stack</div>
+          <h3>Molecule Webserver</h3>
+          <p>
+            A full-stack web application for creating, viewing, and managing 2D molecular structures.
+          </p>
+          <a href="https://github.com/mernayousif7/Molecule-Webserver" target="_blank">View Repository</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Networking</div>
+          <h3>Client-Server System</h3>
+          <p>
+            A client-server system for transferring text files over TCP using socket programming concepts.
+          </p>
+          <a href="https://github.com/mernayousif7/Client-Server-System" target="_blank">View Repository</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Finance App</div>
+          <h3>MyFinance App</h3>
+          <p>
+            An interactive personal finance app with dashboard features to support monthly spending visibility.
+          </p>
+          <a href="https://github.com/mernayousif7" target="_blank">View GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Java</div>
+          <h3>Street Info Project</h3>
+          <p>
+            A Java command-line tool for displaying intersection, access, and speed limit data.
+          </p>
+          <a href="https://github.com/mernayousif7" target="_blank">View GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <h2 class="section-title">Contact</h2>
       <p>
-        I am a Computer Science graduate from the University of Guelph with experience in
-        software development, SQL, data validation, debugging, testing, and full-stack projects.
-        I enjoy building practical applications, solving technical problems, and learning new technologies.
+        I’m open to new graduate opportunities in software development, QA, data, and technical support roles.
       </p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-
-      <div class="item">
-        <h3>Data Management Assistant, Kenna</h3>
-        <p>Cleaned, validated, and maintained large datasets using SQL and data quality checks.</p>
+      <div class="contact-buttons">
+        <a href="mailto:mernayousif7@gmail.com" class="btn primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/merna-yousif" target="_blank" class="btn secondary">LinkedIn</a>
+        <a href="https://github.com/mernayousif7" target="_blank" class="btn secondary">GitHub</a>
       </div>
-
-      <div class="item">
-        <h3>SQL & ERP Developer, Superior Glove Works Ltd.</h3>
-        <p>Developed a package-tracking API that delivered real-time shipment status updates across integrated systems.</p>
-      </div>
-
-      <div class="item">
-        <h3>Website Redesign Coordinator, University of Guelph</h3>
-        <p>Supported Drupal 7 to Drupal 9 content migration, AODA compliance, and user testing.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-
-      <div class="item">
-        <h3>MyFinance App</h3>
-        <p>An interactive personal finance app with dashboard features to support monthly spending visibility.</p>
-      </div>
-
-      <div class="item">
-        <h3>Molecule Webserver</h3>
-        <p>A full-stack web application for creating, viewing, and managing 2D molecular structures.</p>
-      </div>
-
-      <div class="item">
-        <h3>Client-Server System</h3>
-        <p>A client-server system for transferring text files over TCP.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <p>
-        Python, SQL, Java, C, JavaScript, HTML/CSS, Git, GitHub, Docker, Linux, SSMS,
-        Visual Studio Code, Jira, Microsoft 365, debugging, and troubleshooting.
-      </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Merna Yousif</p>
+    <p>© 2026 Merna Yousif. Built with HTML, CSS, and JavaScript.</p>
   </footer>
 </body>
 </html>
