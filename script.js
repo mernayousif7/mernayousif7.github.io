@@ -1,3 +1,45 @@
+const typingWords = [
+  "Software Developer",
+  "Data & SQL Enthusiast",
+  "QA & Testing Enthusiast",
+  "Full-Stack Project Builder"
+];
+
+const typedText = document.querySelector(".typed-text");
+
+let typingWordIndex = 0;
+let typingCharIndex = 0;
+let typingDeleting = false;
+
+function typeRoleText() {
+  if (!typedText) return;
+
+  const currentWord = typingWords[typingWordIndex];
+
+  if (typingDeleting) {
+    typedText.textContent = currentWord.substring(0, typingCharIndex - 1);
+    typingCharIndex--;
+  } else {
+    typedText.textContent = currentWord.substring(0, typingCharIndex + 1);
+    typingCharIndex++;
+  }
+
+  let speed = typingDeleting ? 45 : 85;
+
+  if (!typingDeleting && typingCharIndex === currentWord.length) {
+    speed = 1300;
+    typingDeleting = true;
+  } else if (typingDeleting && typingCharIndex === 0) {
+    typingDeleting = false;
+    typingWordIndex = (typingWordIndex + 1) % typingWords.length;
+    speed = 350;
+  }
+
+  setTimeout(typeRoleText, speed);
+}
+
+typeRoleText();
+
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -12,7 +54,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 });
 
 const sections = document.querySelectorAll("section[id]");
-const navItems = document.querySelectorAll(".nav-links a");
+const navItems = document.querySelectorAll(".nav-links a[href^='#']");
 
 window.addEventListener("scroll", () => {
   let current = "home";

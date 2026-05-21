@@ -2,12 +2,13 @@
 
 Modern and minimal personal portfolio website built with HTML, CSS, and JavaScript.
 
-## Files
+## Included
 
 - index.html
 - style.css
 - script.js
 - profile.jpg
+- resume.pdf
 
 ## Live site
 
