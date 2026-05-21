@@ -4,176 +4,240 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Merna Yousif | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <a href="#home" class="logo">Merna <span>Yousif</span></a>
+  <div class="page-glow"></div>
 
-    <button class="menu-toggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#home">Merna Yousif</a>
 
-    <nav class="nav-links">
-      <a href="#home" class="active">Home</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <button class="menu-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-text reveal">
-        <p class="eyebrow">Computer Science Graduate</p>
-        <h1>Hi, it’s <span>Merna</span></h1>
-        <h2>I’m a <span class="typed-text"></span><span class="cursor">|</span></h2>
-        <p class="intro">
-          I’m a University of Guelph Computer Science graduate with experience in SQL,
-          software development, testing, data validation, debugging, and full-stack projects.
-          I enjoy building practical systems, improving user experiences, and learning new technologies.
+    <section id="home" class="hero section-shell">
+      <div class="hero-content reveal">
+        <p class="badge">
+          <span>✦</span> Computer Science Graduate
         </p>
 
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/merna-yousif" target="_blank" aria-label="LinkedIn">in</a>
-          <a href="https://github.com/mernayousif7" target="_blank" aria-label="GitHub">GH</a>
-          <a href="mailto:mernayousif7@gmail.com" aria-label="Email">✉</a>
-        </div>
+        <h1>Hi, I’m <span>Merna</span></h1>
+        <p class="subtitle">Computer Science Graduate</p>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+        <p class="intro">
+          I enjoy building clean software, working with data, and creating thoughtful digital experiences that solve real problems.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work <span>→</span></a>
+          <a href="#contact" class="btn btn-outline">Contact Me <span>✉</span></a>
         </div>
       </div>
 
-      <div class="hero-image reveal">
-        <div class="profile-card">
-          <div class="profile-placeholder">
+      <div class="portrait-wrap reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-card">
+          <img src="profile.jpg" alt="Merna Yousif" class="portrait" />
+          <div class="portrait-fallback">
             <span>MY</span>
+            <p>Add your photo as profile.jpg</p>
           </div>
-          <p>Software Development • Data • QA</p>
         </div>
       </div>
     </section>
 
-    <section id="timeline" class="section reveal">
-      <h2 class="section-title">Timeline</h2>
+    <section id="about" class="about-strip section-shell reveal">
+      <article>
+        <div class="icon">⌘</div>
+        <h3>Software Development</h3>
+        <p>Building practical applications and improving technical workflows.</p>
+      </article>
+
+      <article>
+        <div class="icon">◎</div>
+        <h3>Data & SQL</h3>
+        <p>Cleaning, validating, and using data to support better decisions.</p>
+      </article>
+
+      <article>
+        <div class="icon">⌕</div>
+        <h3>QA & Testing</h3>
+        <p>Testing functionality, documenting issues, and improving quality.</p>
+      </article>
+
+      <article>
+        <div class="icon">⬡</div>
+        <h3>Full-Stack Projects</h3>
+        <p>Connecting frontend, backend, and database pieces into useful systems.</p>
+      </article>
+    </section>
+
+    <section class="about-text section-shell reveal">
+      <div>
+        <p class="section-label">About Me</p>
+        <h2>I like turning complex details into clear, useful solutions.</h2>
+      </div>
+      <p>
+        My background includes co-op experience in SQL, data validation, software development, testing, website migration, and API work. I’m especially interested in roles where I can keep learning, contribute to reliable systems, and work with people to solve practical problems.
+      </p>
+    </section>
+
+    <section id="projects" class="section-shell reveal">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">Featured Projects</p>
+          <h2>Things I’ve built</h2>
+        </div>
+        <a href="https://github.com/mernayousif7" target="_blank">View all projects →</a>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-visual code-visual">
+            <span>&gt;_</span>
+          </div>
+          <div>
+            <p class="project-type">Full Stack</p>
+            <h3>Molecule Webserver</h3>
+            <p>A full-stack web application for creating, viewing, and managing 2D molecular structures.</p>
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+            </div>
+            <a href="https://github.com/mernayousif7/Molecule-Webserver" target="_blank">Repository →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual network-visual">
+            <span>⇄</span>
+          </div>
+          <div>
+            <p class="project-type">Networking</p>
+            <h3>Client-Server System</h3>
+            <p>A TCP-based client-server system for transferring text files through structured communication.</p>
+            <div class="tags">
+              <span>C</span>
+              <span>TCP/IP</span>
+              <span>Linux</span>
+            </div>
+            <a href="https://github.com/mernayousif7/Client-Server-System" target="_blank">Repository →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual finance-visual">
+            <span>$</span>
+          </div>
+          <div>
+            <p class="project-type">Dashboard</p>
+            <h3>MyFinance App</h3>
+            <p>A personal finance dashboard designed to support monthly spending visibility and user feedback.</p>
+            <div class="tags">
+              <span>Dashboard</span>
+              <span>UI</span>
+              <span>Data</span>
+            </div>
+            <a href="https://github.com/mernayousif7" target="_blank">GitHub →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-shell reveal">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">Experience</p>
+          <h2>Work timeline</h2>
+        </div>
+      </div>
+
       <div class="timeline">
-        <div class="timeline-item">
-          <span class="date">2025</span>
+        <article>
+          <span>2025</span>
           <div>
             <h3>Data Management Assistant, Kenna</h3>
             <p>Cleaned, validated, and maintained large datasets using SQL and data quality checks.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline-item">
-          <span class="date">2025</span>
+        <article>
+          <span>2025</span>
           <div>
             <h3>Game Tester, Electronic Arts</h3>
-            <p>Tested an existing game build, documented gameplay issues, and provided user-focused feedback.</p>
+            <p>Tested gameplay functionality, documented issues, and provided user-focused feedback.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline-item">
-          <span class="date">2024</span>
+        <article>
+          <span>2024</span>
           <div>
             <h3>Website Redesign Coordinator, University of Guelph</h3>
-            <p>Supported Drupal 7 to Drupal 9 migration, AODA compliance, and usability improvements.</p>
+            <p>Supported Drupal migration, AODA compliance, user testing, and usability improvements.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline-item">
-          <span class="date">2023</span>
+        <article>
+          <span>2023</span>
           <div>
             <h3>SQL & ERP Developer, Superior Glove Works Ltd.</h3>
-            <p>Developed a package-tracking API for real-time shipment status updates across integrated systems.</p>
+            <p>Built a package-tracking API for real-time shipment status updates across integrated systems.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section reveal">
-      <h2 class="section-title">Experience</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Data & SQL</h3>
-          <p>
-            Experience cleaning, validating, and analyzing datasets with SQL and data quality checks
-            to support accurate records and reliable reporting.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Software Development</h3>
-          <p>
-            Built application features, worked with APIs, debugged issues, and contributed across the software lifecycle.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Testing & QA</h3>
-          <p>
-            Tested software builds, documented issues, evaluated functionality, and provided clear feedback for improvements.
-          </p>
         </article>
       </div>
     </section>
 
-    <section id="projects" class="section reveal">
-      <h2 class="section-title">Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-tag">Full Stack</div>
-          <h3>Molecule Webserver</h3>
-          <p>
-            A full-stack web application for creating, viewing, and managing 2D molecular structures.
-          </p>
-          <a href="https://github.com/mernayousif7/Molecule-Webserver" target="_blank">View Repository</a>
-        </article>
-
-        <article class="project-card">
-          <div class="project-tag">Networking</div>
-          <h3>Client-Server System</h3>
-          <p>
-            A client-server system for transferring text files over TCP using socket programming concepts.
-          </p>
-          <a href="https://github.com/mernayousif7/Client-Server-System" target="_blank">View Repository</a>
-        </article>
-
-        <article class="project-card">
-          <div class="project-tag">Finance App</div>
-          <h3>MyFinance App</h3>
-          <p>
-            An interactive personal finance app with dashboard features to support monthly spending visibility.
-          </p>
-          <a href="https://github.com/mernayousif7" target="_blank">View GitHub</a>
-        </article>
-
-        <article class="project-card">
-          <div class="project-tag">Java</div>
-          <h3>Street Info Project</h3>
-          <p>
-            A Java command-line tool for displaying intersection, access, and speed limit data.
-          </p>
-          <a href="https://github.com/mernayousif7" target="_blank">View GitHub</a>
-        </article>
+    <section class="skills section-shell reveal">
+      <p class="section-label">Technical Skills</p>
+      <div class="skill-cloud">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>C</span>
+        <span>HTML/CSS</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Docker</span>
+        <span>Linux</span>
+        <span>SSMS</span>
+        <span>Jira</span>
+        <span>Debugging</span>
       </div>
     </section>
 
-    <section id="contact" class="section contact reveal">
-      <h2 class="section-title">Contact</h2>
+    <section id="contact" class="contact section-shell reveal">
+      <p class="section-label">Contact</p>
+      <h2>Let’s connect</h2>
       <p>
         I’m open to new graduate opportunities in software development, QA, data, and technical support roles.
       </p>
-      <div class="contact-buttons">
-        <a href="mailto:mernayousif7@gmail.com" class="btn primary">Email Me</a>
-        <a href="https://www.linkedin.com/in/merna-yousif" target="_blank" class="btn secondary">LinkedIn</a>
-        <a href="https://github.com/mernayousif7" target="_blank" class="btn secondary">GitHub</a>
+
+      <div class="contact-links">
+        <a href="mailto:mernayousif7@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/merna-yousif" target="_blank">LinkedIn</a>
+        <a href="https://github.com/mernayousif7" target="_blank">GitHub</a>
       </div>
     </section>
   </main>
